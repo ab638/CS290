@@ -1,0 +1,1 @@
+torch:Just a simple torch that can be lit to see the room and set things on fire.:movable

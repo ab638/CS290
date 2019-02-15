@@ -1,0 +1,1 @@
+gold_coin:a gold coin with an unknown purpose: movable

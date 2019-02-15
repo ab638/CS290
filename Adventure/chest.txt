@@ -1,0 +1,1 @@
+chest:A chest locked by three locks of wood, iron, and bronze. I wonder what could be inside?:movable

@@ -1,0 +1,1 @@
+bronze_key:bronze_key:yes:movable

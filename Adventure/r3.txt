@@ -1,0 +1,1 @@
+Iron Hall:You enter a chamber that is filled with iron ore and a singular pickax! There is also a chest, that has 3 locks on it, one wooden, one iron, and one bronze. There doesn't seem to be an apparent exit. Maybe you should look around.:2:chest:lever:now that you've pulled the lever, two exits have appeared! One to the south east and to the north west!:no:no

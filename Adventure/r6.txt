@@ -1,0 +1,1 @@
+Ogre's Room:You have finally found the Ogre's Lair! You can see Georgie huddled in the corner crying. You can only win this battle by using a special order of commands. You will lose if you don't do this right! Good Luck!:1:Ogre:With the Ogre defeated, you have saved Georgie! Congratulations!:no:yes

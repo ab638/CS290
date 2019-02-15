@@ -1,0 +1,1 @@
+lever:a lever that is disguised as a pickax:movable

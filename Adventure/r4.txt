@@ -1,0 +1,1 @@
+Treasure Room: You have entered the treasure room. It is an extravagant room that would make even Smaug proud. On a pedastal you, oddly enough, see a bronze key!:1:pedestal:You should hurry after you removed a key the door to the room starts to close!:no:no

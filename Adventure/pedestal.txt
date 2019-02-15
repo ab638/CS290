@@ -1,0 +1,1 @@
+pedestal:a pedestal with a spot that looks like it would fit a coin:movable

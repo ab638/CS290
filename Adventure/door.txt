@@ -1,0 +1,1 @@
+door:a door that looks like it can be burned down:yes

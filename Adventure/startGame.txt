@@ -1,0 +1,28 @@
+----The Hunt for Georgie----  
+After a long day out with your brother Georgie playing with sticks and stones, you decide to go home. As you are walking,
+you and Georgie hear someone shouting and with your sticks and stones go to investigate. Upon arrival,an Ogre is spotted walking towards a fellow
+villager named Jon and in a silly attempt you try to scare him off, but only piss him off. He grabs Jon and rushes at you 
+and Georgie. You dive out of the way, but hear Georgie's screams as he is carried off... possibly to his death. You get up hunt
+around all night until you find a cave with skulls on the outside. You decide to go in because it is the only way to find
+Georgie.
+
+
+Type 'help' to the get the list of commands that you can perform.
+
+----Game Instructions----
+1> quit - to quit the game
+2> go <direction> - to go in that direction
+3> look - description of the room
+4> look <object> - description of the object
+5> help - to get the help menu
+6> inventory - to get the list of items in inventory
+7> get <object> - to pick up the object
+9> kill ogre - to kill the ogre that kidnapped Georgie
+10> burn door - to burn a wooden door
+11> open chest - open a special chest
+12> light torch - light a torch
+13> examine <object>- examine a object that is in the inventory
+14> remove <object> - remove object from tool belt
+15> untie Jon - unties Jon who might have a special gift for you
+16> items - to see the objects in the room that you can interact with
+

@@ -1,0 +1,1 @@
+Cavern:You enter into the cavern and as you start forward you see a torch on the wall that is unlit. To continue further, it will be necessary to light your way.:3:torch:door:wooden_key:As the light illuminates the room you see that the only way forward (east) is through a plain looking wooden door.:no:no
