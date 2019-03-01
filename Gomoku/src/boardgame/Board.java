@@ -13,9 +13,6 @@ public abstract class Board {
         return board[position.getX()][position.getY()];
     }
 
-    public void setCell(Position position, Cell cell) {
-        board[position.getX()][position.getY()] = cell;
-    }
 
     public boolean withinBounds(Position position) {
         return position.getX() >= 0 && position.getX() < boardSize &&

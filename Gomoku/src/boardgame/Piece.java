@@ -21,25 +21,6 @@ public abstract class Piece {
         this.pieceColor = pieceColor;
     }
 
-    public String getStringRepr() {
-        return stringRepr;
-    }
-
-    public Position getPosition() {
-        return position;
-    }
-
-    public void setPosition(Position position) {
-        this.position = position;
-    }
-
-    public boolean matchesColor(Piece piece) {
-        return piece.pieceColor == this.pieceColor;
-    }
-
-    public boolean matchesColor(Colors c) {
-        return this.pieceColor == c;
-    }
 
     public Colors getPieceColor() {
         return pieceColor;

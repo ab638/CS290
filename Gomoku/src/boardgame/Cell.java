@@ -4,7 +4,6 @@ package boardgame;
 import static boardgame.Piece.Colors.EMPTY;
 
 public class Cell {
-    private char symbol = '.';
     private Piece.Colors content;
     private int row, col;
 
@@ -29,9 +28,6 @@ public class Cell {
         this.content = content;
     }
 
-    public Piece.Colors getContent() {
-        return content;
-    }
 
     @Override
     public String toString() {
