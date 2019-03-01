@@ -1,3 +1,10 @@
+package gomoku;
+
+import boardgame.Board;
+import boardgame.Cell;
+import boardgame.Player;
+import boardgame.Position;
+
 import java.util.regex.Pattern;
 
 public class GomokuBoard extends Board {
@@ -49,8 +56,7 @@ public class GomokuBoard extends Board {
         return regex.matcher(positionString).matches();
     }
 
-    public boolean tryPlayingPosition(String input, Player player) {
-        //   try {
+    public boolean tryPlayingPosition(String input, GomokuPiece gomokuPiece) {
         String[] split = input.split("-", 2);
         if (!matchedPattern(input)) {
             System.out.println("Bad format.");
@@ -61,15 +67,14 @@ public class GomokuBoard extends Board {
         try {
             row = Integer.parseInt(split[1]);
             Position position = new Position(row - 1, column);
-            return checkPosition(position, input, player);
+            return checkPosition(position, gomokuPiece);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Formatting incorrect. Try again.");
             return false;
         }
     }
 
-    private boolean checkPosition(Position position, String input, Player player) {
-
+    private boolean checkPosition(Position position, GomokuPiece gomokuPiece) {
         if (!withinBounds(position)) {
             System.out.println("Out of bounds. Try again.");
             return false;
@@ -81,13 +86,9 @@ public class GomokuBoard extends Board {
                 System.out.println("Black piece at this position.");
             return false;
         } else {
-            boardArray[position.getX()][position.getY()] = new Cell(new Position(position.getX(), position.getY()), player.getColor());
+            boardArray[position.getX()][position.getY()].setContent(gomokuPiece.getPieceColor());
             return true;
         }
-    }
-
-    public boolean doesPlayerWin(Player currentPlayer) {
-        return checkWin(currentPlayer);
     }
 
     public boolean isDraw() {

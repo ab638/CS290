@@ -1,16 +1,20 @@
+package boardgame;
+
+
+import static boardgame.Piece.Colors.EMPTY;
 
 public class Cell {
-    private char symbol;
-    private Colors content;
+    private char symbol = '.';
+    private Piece.Colors content;
     private int row, col;
 
     public Cell(Position position) {
 
-        this(position, Colors.EMPTY);
+        this(position, EMPTY);
         clear();
     }
 
-    public Cell(Position position, Colors content) {
+    public Cell(Position position, Piece.Colors content) {
 
         this.row = position.getX();
         this.col = position.getY();
@@ -18,14 +22,14 @@ public class Cell {
     }
 
     public void clear() {
-        content = Colors.EMPTY;
+        content = EMPTY;
     }
 
-    public void setContent(Colors content) {
+    public void setContent(Piece.Colors content) {
         this.content = content;
     }
 
-    public Colors getContent() {
+    public Piece.Colors getContent() {
         return content;
     }
 

@@ -1,17 +1,20 @@
+package boardgame;
+
+
 public class Player {
     private String name;
-    private Colors color;
+    private Piece.Colors color;
 
     public Player() {
-        this("", Colors.EMPTY);
+        this("", Piece.Colors.EMPTY);
     }
 
-    public Player(String name, Colors color) {
+    public Player(String name, Piece.Colors color) {
         this.name = name;
         this.color = color;
     }
 
-    public Colors getColor() {
+    public Piece.Colors getColor() {
         return color;
     }
 

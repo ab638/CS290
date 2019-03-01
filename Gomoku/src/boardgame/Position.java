@@ -1,3 +1,5 @@
+package boardgame;
+
 public class Position {
     protected final int x;
     protected final int y;

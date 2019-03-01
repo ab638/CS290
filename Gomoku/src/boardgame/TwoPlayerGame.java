@@ -1,3 +1,5 @@
+package boardgame;
+
 public abstract class TwoPlayerGame {
 
     protected Player currentPlayer;

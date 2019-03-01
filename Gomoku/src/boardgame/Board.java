@@ -1,4 +1,4 @@
-
+package boardgame;
 
 public abstract class Board {
     protected int boardSize;

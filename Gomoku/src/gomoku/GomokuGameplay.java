@@ -1,10 +1,16 @@
+package gomoku;
+
+import boardgame.Application;
+import boardgame.Player;
+import boardgame.TwoPlayerGame;
+
 public class GomokuGameplay extends TwoPlayerGame {
     private GomokuBoard board; //  a game has a board and players
 
 
-    public GomokuGameplay(Player player1, Player player2, GomokuBoard board) {
+    public GomokuGameplay(Player player1, Player player2) {
         super(player1, player2);
-        this.board = board;
+        board = new GomokuBoard();
     }
 
     private void menu() {
@@ -14,6 +20,8 @@ public class GomokuGameplay extends TwoPlayerGame {
         System.out.println("Rules:");
         System.out.println("1. to place a piece use the following format: Column-Row");
         System.out.println("2. Get 5 in a row");
+        System.out.println("3. Type 'quit' or 'exit' to exit the game.\n");
+
     }
 
     @Override
@@ -41,13 +49,12 @@ public class GomokuGameplay extends TwoPlayerGame {
     }
 
     private void playerTurn(Player currentPlayer) {
-
         while (true) {
             playerPrompt(currentPlayer);
             String input = Application.input.nextLine();
             if (input.equalsIgnoreCase("exit") || input.equalsIgnoreCase("quit"))
                 exitGame();
-            if (board.tryPlayingPosition(input, currentPlayer))
+            if (board.tryPlayingPosition(input, GomokuPiece.createPiece(currentPlayer.getColor())))
                 return;
             board.print();
         }
@@ -73,7 +80,7 @@ public class GomokuGameplay extends TwoPlayerGame {
     }
 
     private boolean currentPlayerHasWon() {
-        return board.doesPlayerWin(currentPlayer);
+        return board.checkWin(currentPlayer);
     }
 
 
