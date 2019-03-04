@@ -25,6 +25,7 @@ public class Application {
     public void run() {
         Vector<TwoPlayerGame> game = initGame();
         game.get(0).run();
+
     }
 
     private Vector<TwoPlayerGame> initGame() {
